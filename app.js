@@ -25,6 +25,10 @@ if (process.env.NODE_ENV === "development") {
 app.engine(".hbs", exphbs.engine({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
+//Routes
+app.use("/", require("./routes/index"));
+// app.use("/dashboard", require("./routes/index"));
+
 const PORT = process.env.PORT || 8100;
 
 app.listen(
