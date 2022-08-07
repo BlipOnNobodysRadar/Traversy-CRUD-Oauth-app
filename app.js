@@ -1,3 +1,5 @@
+// Stopped at 4 hr 35ish mins into the stream.
+
 const path = require("path");
 const express = require("express");
 const dotenv = require("dotenv");
